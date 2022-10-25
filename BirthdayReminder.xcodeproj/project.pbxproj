@@ -11,6 +11,9 @@
 		446CF1EA2906ACBA008FE342 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF1E92906ACBA008FE342 /* ContentView.swift */; };
 		446CF1EC2906ACBE008FE342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446CF1EB2906ACBE008FE342 /* Assets.xcassets */; };
 		446CF1EF2906ACBE008FE342 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446CF1EE2906ACBE008FE342 /* Preview Assets.xcassets */; };
+		446CF1F72906AD44008FE342 /* BirthdayReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 446CF1F52906AD43008FE342 /* BirthdayReminder.xcdatamodeld */; };
+		446CF1F92906AF27008FE342 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF1F82906AF27008FE342 /* DataController.swift */; };
+		446CF1FB2906B24A008FE342 /* AddBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CF1FA2906B24A008FE342 /* AddBirthdayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		446CF1E92906ACBA008FE342 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		446CF1EB2906ACBE008FE342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		446CF1EE2906ACBE008FE342 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		446CF1F62906AD43008FE342 /* BirthdayReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayReminder.xcdatamodel; sourceTree = "<group>"; };
+		446CF1F82906AF27008FE342 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		446CF1FA2906B24A008FE342 /* AddBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				446CF1E72906ACBA008FE342 /* BirthdayReminderApp.swift */,
 				446CF1E92906ACBA008FE342 /* ContentView.swift */,
+				446CF1FA2906B24A008FE342 /* AddBirthdayView.swift */,
+				446CF1F82906AF27008FE342 /* DataController.swift */,
+				446CF1F52906AD43008FE342 /* BirthdayReminder.xcdatamodeld */,
 				446CF1EB2906ACBE008FE342 /* Assets.xcassets */,
 				446CF1ED2906ACBE008FE342 /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				446CF1EA2906ACBA008FE342 /* ContentView.swift in Sources */,
+				446CF1FB2906B24A008FE342 /* AddBirthdayView.swift in Sources */,
+				446CF1F92906AF27008FE342 /* DataController.swift in Sources */,
+				446CF1F72906AD44008FE342 /* BirthdayReminder.xcdatamodeld in Sources */,
 				446CF1E82906ACBA008FE342 /* BirthdayReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +285,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +314,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +351,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		446CF1F52906AD43008FE342 /* BirthdayReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				446CF1F62906AD43008FE342 /* BirthdayReminder.xcdatamodel */,
+			);
+			currentVersion = 446CF1F62906AD43008FE342 /* BirthdayReminder.xcdatamodel */;
+			path = BirthdayReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 446CF1DC2906ACBA008FE342 /* Project object */;
 }
